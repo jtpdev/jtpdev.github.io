@@ -1,0 +1,126 @@
+* {
+    font-family: 'Inconsolata', monospace;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background: url("../img/bg-pattern.png"),
+    linear-gradient(141deg, #3f6b3e 0%, #5fa05e 51%, #80b37f 75%);
+    background-color: #5fa05e;
+    color: #FFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 250px;
+    margin: calc(20% - 125px) auto;
+}
+
+.content > span {
+    text-align: center;
+    font-size: 36px;
+    display: block;
+    margin: 15px;
+}
+
+.content > a {
+    margin-left: calc(50% - 100px);
+}
+
+.content > a > img {
+    width: 200px;
+    border-radius: 150px;
+    border: 7px solid #c6c6c6;
+    box-shadow: 4px 4px #1a2b19;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+.content > a > img:active {
+    box-shadow: 4px 4px #487745;
+    border: 7px solid #eeeeee;
+}
+
+.media {
+    text-align: center;
+    font-size: 30px;
+}
+
+ion-icon {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 5px;
+    transition: color 0.2s;
+}
+
+ion-icon:hover {
+    color: #FFF;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Tooltip text */
+.tooltip .tooltiptext {
+    font-size: 16px;
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 10;
+    top: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgb(37, 37, 37) transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        margin: 150px auto;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .content {
+        margin: 50px auto;
+    }
+    
+    .media {
+        text-align: center;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .content {
+        width: 100%;
+        margin: 30px 0;
+    }
+}
