@@ -1,0 +1,87 @@
+* {
+    font-family: 'Inconsolata', monospace;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background: url("../img/bg-pattern.png"),
+    linear-gradient(141deg, #3f6b3e 0%, #5fa05e 51%, #80b37f 75%);
+    background-color: #5fa05e;
+    color: #FFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 300px;
+    margin: calc(20% - 150px) auto;
+}
+
+.content > span {
+    text-align: center;
+    font-size: 36px;
+    display: block;
+    margin: 15px;
+}
+
+.content > a {
+    margin-left: calc(50% - 100px);
+}
+
+.content > a > img {
+    width: 200px;
+    border-radius: 150px;
+    border: 7px solid #c6c6c6;
+    box-shadow: 4px 4px #1a2b19;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+.content > a > img:active {
+    box-shadow: 4px 4px #487745;
+    border: 7px solid #eeeeee;
+}
+
+.media {
+    text-align: center;
+    font-size: 30px;
+}
+
+ion-icon {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 5px;
+    transition: color 0.2s;
+}
+
+ion-icon:hover {
+    color: #FFF;
+}
+
+@media screen and (max-width: 300px) {
+    .content {
+        width: 100%;
+        margin: 50px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        width: 300px;
+        margin: 75px auto;
+    }
+    
+    .media {
+        text-align: center;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        width: 100%;
+        margin: 200px 0;
+    }
+}
