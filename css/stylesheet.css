@@ -62,7 +62,7 @@ ion-icon:hover {
 
 @media screen and (max-width: 1200px) {
     .content {
-        margin: 150px 0;
+        margin: 150px auto;
     }
 }
 
