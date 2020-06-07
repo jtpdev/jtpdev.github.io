@@ -16,8 +16,8 @@ a {
 }
 
 .content {
-    width: 300px;
-    margin: calc(20% - 150px) auto;
+    width: 250px;
+    margin: calc(20% - 125px) auto;
 }
 
 .content > span {
